@@ -1,0 +1,169 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   KPF — FOOTER v3 (PREMIUM DARK LUXURY)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.footer {
+  background: linear-gradient(180deg, #04040A 0%, #020208 100%);
+  border-top: 1px solid rgba(212,196,106,0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient top glow */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 200px;
+  background: radial-gradient(ellipse, rgba(212,196,106,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3.5rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 5rem 5%;
+}
+
+/* ── BRAND ────────────────────────────────────────────────────────────────── */
+.brand { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.logoImg {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(212,196,106,0.28), 0 0 18px rgba(212,196,106,0.1);
+}
+
+.logoText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.88rem; font-weight: 800;
+  letter-spacing: 0.24em; color: #F5F5F0;
+  display: block; line-height: 1;
+}
+
+.logoSub {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.46rem; font-weight: 600;
+  letter-spacing: 0.32em; color: rgba(212,196,106,0.6);
+  text-transform: uppercase; display: block; margin-top: 2px;
+}
+
+.tagline {
+  font-size: 0.88rem;
+  color: #5A5A6A;
+  line-height: 1.78;
+  max-width: 320px;
+}
+
+.motto {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem; font-weight: 800;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: rgba(212,196,106,0.45);
+}
+
+.socials {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.social {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.62rem; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #5A5A6A;
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: color 0.22s, border-color 0.22s, background 0.22s;
+}
+.social:hover {
+  color: #D4C46A;
+  border-color: rgba(212,196,106,0.35);
+  background: rgba(212,196,106,0.05);
+}
+
+/* ── COLUMNS ─────────────────────────────────────────────────────────────── */
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.colTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.62rem; font-weight: 800;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: rgba(212,196,106,0.7);
+  margin-bottom: 0.5rem;
+}
+
+.colLink {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.88rem; color: #5A5A6A;
+  text-decoration: none;
+  transition: color 0.2s, padding-left 0.2s;
+  display: block;
+  line-height: 1.6;
+}
+.colLink:hover { color: rgba(245,245,240,0.85); padding-left: 3px; }
+
+/* ── BOTTOM BAR ──────────────────────────────────────────────────────────── */
+.bottom {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.6rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.copy {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #3A3A4A;
+}
+
+.legalLinks { display: flex; align-items: center; gap: 0.6rem; }
+.legalLink {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #3A3A4A; text-decoration: none;
+  transition: color 0.2s;
+}
+.legalLink:hover { color: rgba(212,196,106,0.7); }
+.legalSep { color: #3A3A4A; font-size: 0.5rem; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 3.5rem 5%;
+  }
+  .brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 540px) {
+  .top { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.5rem; }
+  .brand { grid-column: auto; }
+  .bottom { flex-direction: column; align-items: flex-start; padding: 1.4rem 1.5rem; }
+}
