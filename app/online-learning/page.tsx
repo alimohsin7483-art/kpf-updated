@@ -165,7 +165,7 @@ export default function OnlineLearningPage() {
               <div key={p.slug} className="prog-card">
                 <span className="prog-card-badge">{p.tag}</span>
                 <h3>{p.title}</h3>
-                <p>{p.tagline ?? p.subtitle}</p>
+                <p>{p.shortDesc}</p>
                 <div className="prog-card-meta">
                   Format: <span>{p.format?.join(" / ")}</span>
                 </div>
