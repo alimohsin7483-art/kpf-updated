@@ -8,13 +8,13 @@ import { SkipLink } from "@/components/SkipLink";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KPF Academy — Where Fitness Professionals Are Built",
+  title: "KPF Academy — Where Fitness Professionals Are Built, Not Just Certified.",
   description:
     "India's premium academy for personal training, sports nutrition, and fitness business education. Science-based, mentor-led, career-focused.",
   keywords:
     "KPF, personal training certification, sports nutrition course, fitness education India, fitness trainer course Mumbai, Shraddha Gadit",
   openGraph: {
-    title: "KPF Academy — Where Fitness Professionals Are Built",
+    title: "KPF Academy — Where Fitness Professionals Are Built, Not Just Certified.",
     description:
       "India's premium academy for personal training, sports nutrition, and fitness business education.",
     siteName: "KPF Academy",
@@ -30,7 +30,7 @@ const ANN_TEXT = (
     &nbsp;·&nbsp;<a href="/apply">Apply Now</a>
     &nbsp;·&nbsp;<a href="/contact">Book Counselling</a>
     &nbsp;&nbsp;✦&nbsp;&nbsp;
-    Admissions Open for July 2025 Batch &nbsp;·&nbsp; Limited seats across all programs
+    Admissions Open for July 2026 Batch &nbsp;·&nbsp; Limited seats across all programs
     &nbsp;·&nbsp;<a href="/apply">Apply Now</a>
     &nbsp;·&nbsp;<a href="/contact">Book Counselling</a>
     &nbsp;&nbsp;✦&nbsp;&nbsp;

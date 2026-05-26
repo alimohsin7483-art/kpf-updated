@@ -47,6 +47,9 @@ export default function HomePage() {
               <em className="heroAccent">Professionals</em><br />
               Are Built.
             </h1>
+            <div className="dynamicTagline">
+  Not Just Certified.
+</div>
 
             <p className="heroDesc">
               India&apos;s premium academy for fitness education, sports
