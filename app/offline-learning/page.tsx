@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Offline Learning — KPF Academy",
-  description: "KPF offline learning centres in Mumbai, Pune and Ahmedabad. Hands-on, immersive, in-person fitness education with live demonstrations.",
+  description: "KPF offline learning centres in Mumbai, Surat and Ahmedabad. Hands-on, immersive, in-person fitness education with live demonstrations.",
 };
 
 const OFFLINE_ADVANTAGES = [
@@ -15,7 +15,7 @@ const OFFLINE_ADVANTAGES = [
 
 const LOCATIONS = [
   { city: "Mumbai",     status: "Active",      note: "Primary academic centre. Full program schedule available." },
-  { city: "Pune",       status: "Active",      note: "Active learning centre with regular batch schedules." },
+  { city: "Surat",       status: "Active",      note: "Active learning centre with regular batch schedules." },
   { city: "Ahmedabad",  status: "Active",      note: "Active learning centre. Contact us for batch availability." },
   { city: "More Cities",status: "Coming Soon", note: "New locations being added. Register interest to be notified." },
 ];
@@ -43,7 +43,7 @@ export default function OfflineLearningPage() {
       {/* ── PROOF BAR ─────────────────────────────────────────────── */}
       <div className="proof-bar">
         {[
-          { icon: "🏙️", text: "3 cities — Mumbai, Pune, Ahmedabad" },
+          { icon: "🏙️", text: "3 cities — Mumbai, Surat, Ahmedabad" },
           { icon: "🧑‍🏫", text: "Expert faculty on-site" },
           { icon: "🏋️", text: "Live practical training" },
           { icon: "👥", text: "Cohort-based learning" },

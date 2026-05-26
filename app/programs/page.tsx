@@ -165,7 +165,7 @@ export default function ProgramsPage() {
           </div>
           <div className="format-grid">
             {[
-              { icon: "💻", name: "Online", desc: "Live classes, recorded lectures, mentor support, online assessments. Study from anywhere." },
+              { icon: "💻", name: "Online", desc: "Live classes, mentor support, online assessments. Study from anywhere." },
               { icon: "🏛️", name: "Offline", desc: "In-person sessions at KPF learning centres. Hands-on practicals, live demonstrations, and direct faculty interaction." },
               { icon: "🔀", name: "Blended", desc: "The best of both. Online theory combined with scheduled offline practical sessions for maximum learning impact." },
             ].map((f) => (

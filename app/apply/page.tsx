@@ -84,7 +84,7 @@ export default function ApplyPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>
                 {[
                   { num: "17+", label: "Years of education experience" },
-                  { num: "3", label: "Offline cities (Mumbai, Pune, Ahmedabad)" },
+                  { num: "3", label: "Offline cities (Mumbai, Surat, Ahmedabad)" },
                   { num: "24–48h", label: "Response time from our admissions team" },
                 ].map((s) => (
                   <div key={s.label} style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
@@ -128,7 +128,7 @@ export default function ApplyPage() {
                     </div>
                     <div className="form-field">
                       <label className="form-label">City / Location *</label>
-                      <input className="form-input" placeholder="e.g. Mumbai, Pune, Bangalore" value={formData.city} onChange={e => setFormData({ ...formData, city: e.target.value })} required />
+                      <input className="form-input" placeholder="e.g. Mumbai, Surat, Bangalore" value={formData.city} onChange={e => setFormData({ ...formData, city: e.target.value })} required />
                     </div>
                     <div className="form-field">
                       <label className="form-label">Program of Interest *</label>

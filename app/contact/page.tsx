@@ -78,7 +78,7 @@ export default function ContactPage() {
                 <span className="section-label" style={{ marginBottom: "1rem" }}>Where to Find Us</span>
                 {[
                   { city: "Mumbai", desc: "Primary academic centre" },
-                  { city: "Pune", desc: "Active learning centre" },
+                  { city: "Surat", desc: "Active learning centre" },
                   { city: "Ahmedabad", desc: "Active learning centre" },
                 ].map((loc) => (
                   <div key={loc.city} style={{ padding: "0.9rem 0", borderBottom: "1px solid var(--border)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -161,7 +161,7 @@ export default function ContactPage() {
             {[
               { q: "Where can I see program details and fees?", a: "Visit our Programs page for a full overview, or download the brochure for detailed information including fees, duration, and curriculum." },
               { q: "How do I apply?", a: "Click 'Apply Now' on any program page, or fill out the contact form above. Our admissions team will guide you through the process." },
-              { q: "Can I visit a KPF centre before enrolling?", a: "Yes. Contact us to schedule a visit to your nearest KPF learning centre in Mumbai, Pune, or Ahmedabad." },
+              { q: "Can I visit a KPF centre before enrolling?", a: "Yes. Contact us to schedule a visit to your nearest KPF learning centre in Mumbai, Surat, or Ahmedabad." },
               { q: "How quickly will I receive a response?", a: "Our admissions team reviews every enquiry personally. You can expect a response within 24–48 hours on working days." },
             ].map((faq) => (
               <div key={faq.q} className="accordion-item">

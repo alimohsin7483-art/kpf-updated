@@ -125,7 +125,7 @@ export default function ProgramDetailPage({ params }: Props) {
                 <div className="format-icon">{f === "Online" ? "💻" : f === "Offline" ? "🏛️" : "🔀"}</div>
                 <div className="format-name">{f}</div>
                 <div className="format-desc">
-                  {f === "Online" && "Live classes, recorded lectures, digital materials, online assessments, mentor support."}
+                  {f === "Online" && "Live classes, digital materials, online assessments, mentor support."}
                   {f === "Offline" && "In-person at KPF centres. Hands-on practicals, live demonstrations, direct faculty interaction."}
                   {f === "Blended" && "Online theory + offline practicals. Best of both worlds with full mentor access."}
                 </div>

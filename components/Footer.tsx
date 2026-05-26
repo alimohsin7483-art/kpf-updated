@@ -123,7 +123,7 @@ export default function Footer() {
           <h4 className={styles.colTitle}>Connect</h4>
           <a href="tel:+917208299269"  className={styles.colLink}>+91 72082 99269</a>
           <a href="https://wa.me/917208299269" target="_blank" rel="noopener noreferrer" className={styles.colLink}>WhatsApp Us</a>
-          <span className={styles.colLink} style={{ color: "var(--gray2)" }}>Mumbai · Pune · Ahmedabad</span>
+          <span className={styles.colLink} style={{ color: "var(--gray2)" }}>Mumbai · Surat · Ahmedabad</span>
           <span className={styles.colLink} style={{ color: "var(--gray2)" }}>Mon–Sat, 10 AM – 7 PM IST</span>
           <Link href="/apply" className="btn-gold" style={{ marginTop: "1.5rem", fontSize: "0.72rem", padding: "0.7rem 1.5rem" }}>
             Apply Now →

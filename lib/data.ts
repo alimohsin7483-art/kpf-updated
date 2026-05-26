@@ -195,7 +195,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Priya Nair",
-    location: "Pune",
+    location: "Surat",
     result: "Nutrition Coach",
     program: "Applied Sports Nutrition Certification",
     quote:
