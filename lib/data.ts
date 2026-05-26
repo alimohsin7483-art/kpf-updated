@@ -30,7 +30,7 @@ export const programs: Program[] = [
       "A comprehensive, mentor-led certification in exercise science, training methodology, program design, assessment, and professional coaching communication — designed for trainers who want to operate at the highest standard.",
     shortDesc: "Build the knowledge, skill, and confidence to train any client with precision.",
     format: ["Online", "Offline", "Blended"],
-    duration: "4–6 Months",
+    duration: "3 Months",
     eligibility: "Open to all — no prior fitness background required",
     whoFor: [
       "Aspiring personal trainers with no formal education in fitness",
@@ -70,7 +70,7 @@ export const programs: Program[] = [
       "A structured education in the science and application of human nutrition — from macronutrients and energy balance to meal planning, supplementation, and evidence-based dietary coaching.",
     shortDesc: "Master the science of nutrition for performance, fat loss, muscle gain, and long-term health.",
     format: ["Online", "Offline", "Blended"],
-    duration: "3–5 Months",
+    duration: "2 Months",
     eligibility: "Open to all — trainers, enthusiasts, and health professionals welcome",
     whoFor: [
       "Personal trainers who want to add nutrition coaching to their services",
@@ -109,7 +109,7 @@ export const programs: Program[] = [
       "An education program designed for current and aspiring gym owners, facility managers, and fitness entrepreneurs — covering business operations, team building, revenue strategy, and client retention.",
     shortDesc: "Go beyond training. Learn the business systems that drive successful fitness facilities.",
     format: ["Online", "Blended"],
-    duration: "3–4 Months",
+    duration: "2 Months",
     eligibility: "Working fitness professionals, managers, or aspiring gym owners",
     whoFor: [
       "Gym owners looking to professionalise operations",

@@ -169,7 +169,7 @@ export default function ProgramsShowcase() {
                   {p.duration && <><span className={styles.metaDot}>·</span><span>{p.duration}</span></>}
                 </div>
                 <h3 className={styles.title}>{p.title}</h3>
-                <p className={styles.excerpt}>{p.tagline ?? p.subtitle}</p>
+                <p className={styles.excerpt}>{p.shortDesc}</p>
 
                 <Link
                   href={`/programs/${p.slug}`}
