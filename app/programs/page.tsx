@@ -16,7 +16,13 @@ export default function ProgramsPage() {
           <span className="section-label" style={{ justifyContent: "center", marginBottom: "1.2rem" }}>Programs</span>
           <h1>Choose the Learning Pathway Aligned with Your Goals.</h1>
           <p>Structured certification programs and short-format learning across personal training, sports nutrition, and fitness business — available online, offline, and in blended formats.</p>
-          <Link href="/apply" className="btn-gold">Download Brochure →</Link>
+          <a
+  href="/brochure.pdf"
+  download
+  className="btn-gold"
+>
+  Download Brochure →
+</a>
         </div>
       </section>
 
@@ -114,14 +120,14 @@ export default function ProgramsPage() {
                 </tr>
                 <tr>
                   <td>Duration</td>
-                  <td>4–6 Months</td>
-                  <td>3–5 Months</td>
-                  <td>3–4 Months</td>
+                  <td> 3 Months</td>
+                  <td> 2 Months</td>
+                  <td> 2 Months</td>
                   <td>Half-day to 2-day</td>
                 </tr>
                 <tr>
                   <td>Best For</td>
-                  <td>Aspiring / working trainers</td>
+                  <td>Fitness Entusiasts</td>
                   <td>Trainers, health professionals</td>
                   <td>Gym owners, managers</td>
                   <td>All professionals</td>
@@ -138,7 +144,7 @@ export default function ProgramsPage() {
                   <td><span className="check-yes">✓ Yes</span></td>
                   <td><span className="check-yes">✓ Yes</span></td>
                   <td><span className="check-yes">✓ Yes</span></td>
-                  <td><span className="check-yes">✓ Completion Certificate</span></td>
+                  <td><span className="check-yes">✓ Yes</span></td>
                 </tr>
               </tbody>
             </table>
@@ -159,7 +165,7 @@ export default function ProgramsPage() {
           </div>
           <div className="format-grid">
             {[
-              { icon: "💻", name: "Online", desc: "Live classes, recorded lectures, digital study materials, mentor support, online assessments. Study from anywhere." },
+              { icon: "💻", name: "Online", desc: "Live classes, recorded lectures, mentor support, online assessments. Study from anywhere." },
               { icon: "🏛️", name: "Offline", desc: "In-person sessions at KPF learning centres. Hands-on practicals, live demonstrations, and direct faculty interaction." },
               { icon: "🔀", name: "Blended", desc: "The best of both. Online theory combined with scheduled offline practical sessions for maximum learning impact." },
             ].map((f) => (
@@ -183,8 +189,8 @@ export default function ProgramsPage() {
           <div className="faq-section">
             {[
               { q: "Who can enrol in KPF programs?", a: "KPF programs are open to anyone with a genuine interest in fitness education — whether you have a formal background in fitness or are starting fresh. Specific eligibility details are listed on each program page." },
-              { q: "Can I study while working a full-time job?", a: "Yes. Our online and blended formats are designed for working professionals. Live sessions are scheduled for flexibility, and all recordings and materials are accessible at your own pace." },
-              { q: "What kind of certification do I receive?", a: "Upon successful completion of your program and assessments, you receive a KPF certification that reflects structured education, mentored learning, and demonstrated competence." },
+              { q: "Can I study while working a full-time job?", a: "Yes. Our online and blended formats are designed for working professionals. Live sessions are scheduled for flexibility." },
+              
               { q: "What if I need help choosing the right program?", a: "Book a free Academic Counselling session. Our team will help you identify the right learning pathway based on your goals, experience, and schedule." },
               { q: "Is career support available for online students?", a: "Yes. All career support components — guidance, communication training, branding, and interview readiness — are accessible to online, offline, and blended students." },
             ].map((faq) => (

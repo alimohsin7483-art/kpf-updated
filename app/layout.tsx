@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 /* Announcement bar text — duplicated for seamless mobile scroll loop */
 const ANN_TEXT = (
   <>
-    Admissions Open for July 2025 Batch &nbsp;·&nbsp; Limited seats across all programs
+    Admissions Open for July 2026 Batch &nbsp;·&nbsp; Limited seats across all programs
     &nbsp;·&nbsp;<a href="/apply">Apply Now</a>
     &nbsp;·&nbsp;<a href="/contact">Book Counselling</a>
     &nbsp;&nbsp;✦&nbsp;&nbsp;

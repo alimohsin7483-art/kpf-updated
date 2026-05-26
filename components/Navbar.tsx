@@ -67,8 +67,8 @@ export default function Navbar() {
               priority
             />
             <div className={styles.logoContent}>
-              <div className={styles.logoText}>KPF ACADEMY</div>
-              <div className={styles.logoSub}>Elite Fitness Education</div>
+              <div className={styles.logoText}>KINETIC PRO FITNESS ACADEMY</div>
+              <div className={styles.logoSub}>Excellence in Fitness Education</div>
             </div>
           </Link>
 

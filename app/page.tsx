@@ -228,8 +228,7 @@ export default function HomePage() {
             {[
               { icon: "🎥", name: "Live Classes",
                 desc: "Scheduled, mentor-led sessions with real-time interaction. Not pre-recorded. Not automated." },
-              { icon: "📚", name: "Recorded Lectures",
-                desc: "Access session recordings anytime for revision and self-paced study." },
+              
               { icon: "📖", name: "Study Resources",
                 desc: "Curated study guides, reference materials, and module notes — designed for clarity and retention." },
               { icon: "✍️", name: "Assignments",
@@ -414,7 +413,7 @@ export default function HomePage() {
           <div className="locationGrid">
             {[
               { city: "Mumbai",     status: "Active" },
-              { city: "Pune",       status: "Active" },
+              { city: "Surat",       status: "Active" },
               { city: "Ahmedabad",  status: "Active" },
               { city: "More Cities",status: "Coming Soon" },
             ].map((loc) => (
