@@ -41,7 +41,9 @@ export default function ProgramDetailPage({ params }: Props) {
           </div>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginTop: "1.5rem" }}>
             <Link href="/apply" className="btn-gold">Apply Now</Link>
-            <Link href="/contact" className="btn-outline">Download Brochure</Link>
+            <a href="/brochure.pdf" download className="btn-gold">
+  Download Brochure →
+</a>
           </div>
         </div>
       </section>

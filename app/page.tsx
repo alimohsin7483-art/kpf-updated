@@ -4,6 +4,7 @@ import TestimonialSlider from "@/components/TestimonialSlider";
 import LeadForm from "@/components/funnel/LeadForm";
 import CtaBgSlider from "@/components/CtaBgSlider";
 
+
 /* ─── SECTION DIVIDER ────────────────────────────────────────── */
 function Divider({ flip }: { flip?: boolean }) {
   return (
@@ -212,6 +213,7 @@ export default function HomePage() {
       <ProgramsShowcase />
 
       <Divider />
+
 
       {/* ══ HOW YOU LEARN ═════════════════════════════════════════ */}
       <section className="section section-darker">

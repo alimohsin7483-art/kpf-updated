@@ -91,7 +91,9 @@ export default function OnlineLearningPage() {
           </div>
 
           <div className="sectionCta">
-            <Link href="/apply" className="btn-outline">Download Brochure →</Link>
+            <a href="/brochure.pdf" download className="btn-gold">
+  Download Brochure →
+</a>
           </div>
         </div>
       </section>

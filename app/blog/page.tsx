@@ -145,7 +145,9 @@ export default function BlogPage() {
               Download the KPF brochure for a detailed overview of our programs, curriculum, fees, and learning experience.
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/apply" className="btn-gold">Download Brochure →</Link>
+              <a href="/brochure.pdf" download className="btn-gold">
+  Download Brochure →
+</a>
               <Link href="/contact" className="btn-outline">Book Academic Counselling</Link>
             </div>
           </div>

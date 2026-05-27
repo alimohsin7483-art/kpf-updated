@@ -178,7 +178,9 @@ export default function ContactPage() {
         <h2>Take the First Step.</h2>
         <p>Download our brochure or book a free academic counselling session to get started.</p>
         <div className="actions">
-          <Link href="/apply" className="btn-gold">Download Brochure</Link>
+          <a href="/brochure.pdf" download className="btn-gold">
+  Download Brochure →
+</a>
           <a href="https://wa.me/917208299269?text=Hi+KPF!+I'd+like+to+book+a+free+Academic+Counselling+session." target="_blank" rel="noopener noreferrer" className="btn-outline">
             Book Academic Counselling
           </a>
