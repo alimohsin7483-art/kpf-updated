@@ -26,7 +26,6 @@ export default function HomePage() {
           <video
             autoPlay loop muted playsInline
             className="heroBgVideo"
-            poster="/images/hero-bg.jpg"
           >
             <source src="/videos/hero.mp4"  type="video/mp4" />
             <source src="/videos/hero.webm" type="video/webm" />
