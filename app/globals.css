@@ -1265,55 +1265,154 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.2rem;
+  margin-top: 2.5rem;
 }
 
 .locationCard {
   position: relative;
+  overflow: hidden;
+
   background: var(--card);
   border: 1px solid var(--border2);
   border-radius: var(--radius);
-  padding: 2.2rem 1.5rem;
+
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.8rem 1.2rem;
   text-align: center;
-  overflow: hidden;
-  transition: border-color 0.3s, transform 0.3s var(--ease-out), box-shadow 0.3s;
+
+  transition:
+    border-color 0.3s,
+    transform 0.35s var(--ease-out),
+    box-shadow 0.35s;
+
   box-shadow: 0 8px 28px rgba(0,0,0,0.38);
+  backdrop-filter: blur(12px);
 }
+
+.locationCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(212,196,106,0.12),
+      transparent 60%
+    );
+
+  pointer-events: none;
+}
+
 .locationCard::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--neon), transparent);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--neon),
+      transparent
+    );
+
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .locationCard:hover {
-  border-color: rgba(212,196,106,0.28);
-  transform: translateY(-4px);
-  box-shadow: 0 18px 44px rgba(0,0,0,0.5);
+  border-color: rgba(212,196,106,0.32);
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.55),
+    0 0 30px rgba(212,196,106,0.08);
 }
-.locationCard:hover::after { opacity: 1; }
+
+.locationCard:hover::after {
+  opacity: 1;
+}
 
 .locationCity {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
+  line-height: 1;
+
   color: var(--neon);
-  margin-bottom: 0.4rem;
-  text-shadow: 0 0 24px rgba(212,196,106,0.2);
+
+  margin-bottom: 0.55rem;
+
+  text-shadow:
+    0 0 24px rgba(212,196,106,0.22);
+
+  white-space: nowrap;
 }
 
 .locationStatus {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.6rem;
+
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.24em;
+
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+
   color: var(--gray2);
 }
-.locationActive { color: #4ade80; }
 
-@media (max-width: 760px) { .locationGrid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 400px) { .locationGrid { grid-template-columns: 1fr; } }
+.locationActive {
+  color: #4ade80;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .locationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .locationCard {
+    min-height: 145px;
+  }
+
+  .locationCity {
+    font-size: 1.7rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 520px) {
+  .locationGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+  }
+
+  .locationCard {
+    min-height: 120px;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  .locationCity {
+    font-size: 1.15rem;
+    white-space: nowrap;
+  }
+
+  .locationStatus {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+  }
+}
 
 /* ═══════════════════════════════════════════════════════════════════════════
    ENQUIRE / LEAD FORM
